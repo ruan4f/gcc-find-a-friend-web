@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container, Content, Display, Header } from './styles'
 import { Select } from '@/components/Select'
 
 import dogHomeHeader from '../../assets/images/dog_home.svg'
@@ -19,23 +19,25 @@ export function Home() {
 
   return (
     <Container>
-      <div>
+      <Header>
         <img src={dogHomeHeader} alt="Desenho de um rosto de cachorro" />
         FindAFriend
-      </div>
-      <div>Leve a felicidade para o seu Lar</div>
-      <div>
-        <img src={dogsHome} alt="Imagens de 6 carros sorrindo" />
-      </div>
+      </Header>
+      <Display>
+        <div>Leve a felicidade para o seu Lar</div>
+        <div>
+          <img src={dogsHome} alt="Imagens de 6 carros sorrindo" />
+        </div>
+      </Display>
       <div>Encontre o animal de estimação ideal para seu estilo de vida!</div>
-      <div>
+      <Content>
         Busque um amigo:
         <Select label="" name="" options={[]} />
         <Select label="" name="" options={[]} />
         <button>
           <img src="" alt="" />
         </button>
-      </div>
+      </Content>
     </Container>
   )
 }

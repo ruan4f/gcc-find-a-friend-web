@@ -8,3 +8,8 @@ export const Container = styled.div`
   min-height: 100vh;
   background-color: ${(props) => props.theme.primary};
 `
+export const Header = styled.header``
+
+export const Display = styled.div``
+
+export const Content = styled.div``
